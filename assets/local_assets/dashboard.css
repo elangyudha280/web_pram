@@ -7,6 +7,7 @@
     --font: 'Poppins', sans-serif;
     --active-sidebar-item:#0066FE;
     --sidebard-item:#1c1d21;
+    --background-dashboard:#f8f8f8;
 }
 
 *{
@@ -24,6 +25,9 @@
     height: 100vh;
     display: flex;
     font-family: var(--font);
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: var(--background-dashboard);
 }
 
 
@@ -33,7 +37,7 @@
     position: relative;
     width: 200px;
     padding: 1em 0;
-    box-shadow: 22px 0px 9px rgba(20, 31, 31, 0.01), 12px 0px 7px rgba(20, 31, 31, 0.03), 5px 0px 5px rgba(20, 31, 31, 0.04), 1px 0px 3px rgba(20, 31, 31, 0.05), 0px 0px 0px rgba(20, 31, 31, 0.05);
+    box-shadow: 22px 0px 9px rgba(20, 31, 31, 0.01), 12px 0px 7px rgba(20, 31, 31, 0.1), 5px 0px 5px rgba(20, 31, 31, 0.3), 1px 0px 3px rgba(20, 31, 31, 0.2), 0px 0px 0px rgba(20, 31, 31, 0.2);
     height: 100%;
     background: var(--sidebard-item);
     border-top-right-radius: 1em;
