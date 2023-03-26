@@ -5,6 +5,8 @@
     --color-gradient-1:#082F9F;
     --color-gradient-2:#B693EA;
     --font: 'Poppins', sans-serif;
+    --active-sidebar-item:#0066FE;
+    --sidebard-item:#1c1d21;
 }
 
 *{
@@ -12,3 +14,82 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+/* dashboard css */
+
+.dashboard{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    font-family: var(--font);
+}
+
+
+/* sidebar css */
+
+.sidebar__dashboard{
+    position: relative;
+    width: 200px;
+    padding: 1em 0;
+    box-shadow: 22px 0px 9px rgba(20, 31, 31, 0.01), 12px 0px 7px rgba(20, 31, 31, 0.03), 5px 0px 5px rgba(20, 31, 31, 0.04), 1px 0px 3px rgba(20, 31, 31, 0.05), 0px 0px 0px rgba(20, 31, 31, 0.05);
+    height: 100%;
+    background: var(--sidebard-item);
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+.container__sidebar_item{
+    position: relative;
+    width: 100%;
+    padding: 0.5em ;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+ }
+
+
+.side_item{
+    text-transform: capitalize;
+    border-radius: 0.5em;
+    position: relative;
+    width: 100%;
+    height: 40px;
+    padding: 0.3em 1em;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.2s;
+}
+.side_item:hover{
+    background-color: var(--active-sidebar-item);
+    color: #fff;
+}
+.side_item_active{
+    background: var(--active-sidebar-item);
+}
+
+
+/* -------------------- */
+
+
+/* content dashboard css */
+
+.content__dashboard{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    flex: 1;
+}
+
+/* -------------------- */
+
+
+/* ---------------- */
